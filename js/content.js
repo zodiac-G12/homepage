@@ -15,7 +15,7 @@ const home_content = `
         <p class="sentense">It's something I've dealt with.</p>
         <p class="sentense">Please feel free to ask.</p>
         </br>
-        <p style="font-weight:bold" class="sentense">Ruby Node Haskell C Zsh Bash Vim LaTeX MySQL Vue Nuxt AWS HTML5 CSS3 vanillaJS ThreeJS Ubuntu</p>
+        <p style="padding: 1vw;font-weight:bold" class="sentense">Ruby Node Haskell C Zsh Bash Vim LaTeX MySQL Vue Nuxt AWS HTML5 CSS3 vanillaJS ThreeJS Ubuntu</p>
         <div class="space"></div>
         <div class="space"></div>
         <h2>Creations</h2>
