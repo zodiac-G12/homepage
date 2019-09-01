@@ -14,23 +14,24 @@ const home_content = `
         <div class="greater-divider"></div>
         <p class="sentense">It's something I've dealt with.</p>
         <p class="sentense">Please feel free to ask.</p>
-        </br></br>
-        <b>Ruby Node Haskell C Zsh Bash Vim LaTeX MySQL Vue Nuxt AWS HTML5 CSS3 vanillaJS ThreeJS Ubuntu</b>
+        </br>
+        <p style="font-weight:bold" class="sentense">Ruby Node Haskell C Zsh Bash Vim LaTeX MySQL Vue Nuxt AWS HTML5 CSS3 vanillaJS ThreeJS Ubuntu</p>
         <div class="space"></div>
         <div class="space"></div>
         <h2>Creations</h2>
         <div class="greater-divider"></div>
         <p class="sentense">It is my deliverable.</p>
-        <div style="display:block" class="links">
+        <div class="links">
             <a class="link" href="https://zodiac-g12.github.io/main/form/">Minesweeper</a>
             <a class="link" href="https://zodiac-g12.github.io/LightsOut/">Lights Out</a>
             <a class="link" href="https://zodiac-g12.github.io/mtt/">Markdown Memo</a>
+            </br>
             <a class="link" href="https://zodiac-g12.github.io/Slide/pmob_re/">Make Slide</a>
             <a class="link" href="https://zodiac-g12.github.io/3dd/">3D Othello</a>
         </div>
         <div class="space"></div>
         <div class="greater-divider"></div>
-        <footer style="height:5vw;">&copy; Copyright 2019 Zodiac Caulfield</footer>
+        <footer>&copy; Copyright 2019 Zodiac Caulfield</footer>
     </center>
 `;
 
