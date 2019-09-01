@@ -46,16 +46,17 @@ function init(){
             (async()=>{
                 preScroll();
                 const top = nowMainPosition() / 100;
+                const span = top
                 while(0 < nowMainPosition()) {
-                    if(nowMainPosition() > top*70) await sleep(1);
-                    else if(nowMainPosition() > top*60) await sleep(2);
-                    else if(nowMainPosition() > top*50) await sleep(3);
-                    else if(nowMainPosition() > top*40) await sleep(4);
-                    else if(nowMainPosition() > top*30) await sleep(5);
-                    else if(nowMainPosition() > top*20) await sleep(6);
-                    else if(nowMainPosition() > top*10) await sleep(7);
-                    else await sleep(8);
-                    document.scrollingElement.scrollTop += 2;
+                    if(nowMainPosition() > top*70) await sleep(3);
+                    else if(nowMainPosition() > top*60) await sleep(5);
+                    else if(nowMainPosition() > top*50) await sleep(7);
+                    else if(nowMainPosition() > top*40) await sleep(9);
+                    else if(nowMainPosition() > top*30) await sleep(11);
+                    else if(nowMainPosition() > top*20) await sleep(13);
+                    else if(nowMainPosition() > top*10) await sleep(15);
+                    else await sleep(13);
+                    document.scrollingElement.scrollTop += 5;
                 }
                 await sleep(1000);
                 afterScroll();
