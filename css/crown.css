@@ -68,11 +68,13 @@
 .crown a{
   padding: calc(var(--font-size)*0.5) var(--font-size) calc(var(--font-size)*0.5) var(--font-size);
   height: calc(var(--font-size));
+  font-size: calc(var(--font-size)*0.8);
   font-weight: bold;
-  margin-right: calc(var(--font-size));
+  margin-left: calc(var(--font-size)*0.5);
+  margin-right: calc(var(--font-size)*0.5);
   margin-top: calc(var(--font-size)*0.29);
   margin-bottom: calc(var(--font-size));
-  box-shadow: 0 0 0px 1px snow;
+  box-shadow: 0 0 0px 2px snow;
 }
 
 .crown a:hover{
