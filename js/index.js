@@ -34,6 +34,11 @@ function afterScroll() {
 }
 
 function init(){
+    // https://www.yoheim.net/blog.php?q=20121008
+    setTimeout(function(){
+        window.scrollTo(0,1);
+    }, 1);
+
     $('.glitch').glitch();
 
     now = location.href.includes("#") ? location.href.split("#")[1].replace("_info","") : "home";
@@ -44,6 +49,9 @@ function init(){
         if(["home","blog","contact","belong"].includes(e.target.id) && e.target.id != now) {
             now = e.target.id;
             (async()=>{
+                setTimeout(function(){
+                    window.scrollTo(0,1);
+                }, 1);
                 preScroll();
                 const top = nowMainPosition() / 100;
                 const span = top
