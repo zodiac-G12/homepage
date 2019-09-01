@@ -36,7 +36,7 @@ function afterScroll() {
 function init(){
     $('.glitch').glitch();
 
-    now = location.href.split("#")[1].replace("_info","");
+    now = location.href.includes("#") ? location.href.split("#")[1].replace("_info","") : "home";
 
     writeContent();
 
