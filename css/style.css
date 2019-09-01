@@ -1,0 +1,160 @@
+/* 縦長 */
+@media screen and (orientation: portrait) {
+  :root{
+    --font-size: 3.5vw;
+    --landscape: none;
+    --portrait: block;
+  }
+}
+/* 横長 */
+@media screen and (orientation: landscape) {
+  :root{
+    --font-size: 1.5vw;
+    --landscape: block;
+    --portrait: none;
+  }
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: "Ubuntu Mono", monospace;
+  color: snow;
+  padding: 0;
+  margin: 0;
+  background: midnightblue;
+  overflow-x: hidden;
+  font-size: var(--font-size);
+}
+
+.greater-divider{
+  animation: nyoibo 1.0s ease-in-out forwards;
+  margin-bottom:calc(var(--font-size)*1.4);
+  line-height:calc(var(--font-size));
+  margin-left:0vw;
+  font-weight:bold;
+  color:white;
+  border-top: 1px solid white;
+  width:100vw;
+}
+
+.space{
+  height: calc(var(--font-size)*5);
+}
+
+main{
+  position: absolute;
+}
+
+#slidein{
+  position: relative;
+  z-index: 3;
+  background: midnightblue;
+  width: 0;
+  height: 101vh;
+  overflow: hidden;
+}
+
+@keyframes slidein{
+  0%{width: 0}
+  100%{width: 100vw}
+}
+@keyframes blood{
+  0%{background: black}
+  100%{background: crimson}
+}
+@keyframes feedin{
+  0%{margin-left: -1vw;opacity:0;}
+  100%{margin-left: 0;opacity:1;}
+}
+@keyframes nyoibo{
+  0%{width: 0}
+  100%{width: 100vw}
+}
+
+.sentense{
+  margin: calc(var(--font-size));
+}
+
+.links{
+  height: calc(var(--font-size)*2);
+  padding-top: calc(var(--font-size)*2);
+}
+
+.twitter-link, .github-link, .hatena-link, .qiita-link{
+  text-decoration: none;
+  margin-right: 10px;
+  padding: calc(var(--font-size)*0.5) calc(var(--font-size)) calc(var(--font-size)*0.5) calc(var(--font-size)*0.9);
+  color: white;
+  height: var(--font-size);
+  line-height: var(--font-size);
+  text-align: center;
+  border-radius: 3px;
+  user-select: none;
+  outline: none;
+  opacity: 0;
+  animation: feedin 0.5s ease-in-out forwards;
+}
+
+.twitter-link{
+  background: steelblue;
+}
+
+.github-link{
+  background: red;
+}
+
+.qiita-link{
+  background: #55c500;
+}
+
+.hatena-link{
+  background: #4d4d4d;
+}
+
+.link{
+  color: gold;
+  font-size: calc(var(--font-size)*1.5);
+  animation: feedin 0.5s ease-in-out forwards;
+}
+
+.link:hover{
+  color: red;
+}
+
+.twitter-link:hover, .github-link:hover, .qiita-link:hover, .hatena-link:hover{
+  color: white;
+  box-shadow: 0 0 10px 2px black;
+}
+
+.twitter-link:hover{
+  background: teal;
+}
+
+.github-link:hover{
+  background: crimson;
+}
+
+.qiita-link:hover{
+  background: forestgreen;
+}
+
+.hatena-link:hover{
+  background: darkslategray;
+}
+
+.twitter-link:active{
+  box-shadow: 0 0 10px 5px teal;
+}
+
+.github-link:active{
+  box-shadow: 0 0 10px 5px crimson;
+}
+
+.qiita-link:active{
+  box-shadow: 0 0 10px 5px forestgreen;
+}
+
+.hatena-link:active{
+  box-shadow: 0 0 10px 5px darkslategray;
+}
