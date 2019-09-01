@@ -56,9 +56,9 @@ function init(){
                     else if(nowMainPosition() > top*20) await sleep(13);
                     else if(nowMainPosition() > top*10) await sleep(15);
                     else await sleep(13);
-                    document.scrollingElement.scrollTop += 5;
+                    document.scrollingElement.scrollTop += 10;
                 }
-                await sleep(1000);
+                await sleep(2000);
                 afterScroll();
                 writeContent();
                 location.href = location.href.split("#")[0] + `#${now}_info`;
