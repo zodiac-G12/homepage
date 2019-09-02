@@ -39,7 +39,7 @@ function init(){
         window.scrollTo(0,1);
     }, 1);
 
-    $('.glitch').glitch();
+    // $('.glitch').glitch();
 
     now = location.href.includes("#") ? location.href.split("#")[1].replace("_info","") : "home";
 
