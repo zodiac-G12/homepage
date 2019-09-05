@@ -11,8 +11,37 @@
   width: 100vw;
 }
 
-.crown h1{
+.crown h2{
+  font-family: 'Bungee Shade', cursive;
+  color: gold;
   background: black;
+}
+
+.planet{
+  width:0;
+  margin-left: 3vw;
+  height:0;
+  float: left;
+  animation: pulpul 5s ease-in-out infinite;
+}
+
+@keyframes pulpul{
+  0%{margin-top: 10vh;}
+  50%{margin-top: 10vh;}
+  60%{margin-top: 6vh;}
+  70%{margin-top: 12vh;}
+  80%{margin-top: 7vh;}
+  90%{margin-top: 11vh;}
+  100%{margin-top: 10vh;}
+}
+
+@keyframes leftp{
+  0%{margin-top:-20vh;}
+  90%{opacity:1;}
+  100%{
+    opacity:0;
+    margin-top:calc(var(--font-size)*14);
+  }
 }
 
 .watar4, .watar3, .watar2, .watar1, .watar0{
@@ -46,34 +75,38 @@
 }
 
 .watar0{
+  z-index:4;
   margin: calc(var(--font-size));
   width: calc(var(--font-size)*12);
   animation-delay: 0.5s;
 }
 
 .crown img{
+  z-index:5;
   height: calc(var(--font-size)*10);
   object-fit: contain;
   animation: watar 1s ease-in-out infinite;
 }
 
 #menulink{
+  z-index: 3;
   width: 100vw;
-  height: calc(var(--font-size)*2);
-  padding-top: 1vw;
-  padding-bottom: 0.5vw;
+  height: calc(var(--font-size)*1.5);
+  /* padding-top: calc(var(--font-size)*0.2); */
+  padding-bottom: 1.3vh;
 }
 
 .crown a{
   padding: calc(var(--font-size)*0.5) var(--font-size) calc(var(--font-size)*0.5) var(--font-size);
   height: calc(var(--font-size));
   font-size: calc(var(--font-size)*0.8);
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-left: calc(var(--font-size)*0.5);
   margin-right: calc(var(--font-size)*0.5);
   margin-top: calc(var(--font-size)*0.29);
   margin-bottom: calc(var(--font-size));
-  box-shadow: 0 0 0px 2px snow;
+  box-shadow: 0 0 0px 1px snow;
+  font-family: 'Black Ops One', cursive;
 }
 
 .crown a:hover{
