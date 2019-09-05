@@ -24,6 +24,7 @@ function writeContent() {
     else if(now=="belong") document.body.getElementsByTagName("main")[0].innerHTML = belong_content;
     else if(now=="blog") document.body.getElementsByTagName("main")[0].innerHTML = blog_content;
     else document.body.getElementsByTagName("main")[0].innerHTML = home_content;
+    document.body.style.background = colorMap[now];
 }
 
 function afterScroll() {
@@ -31,6 +32,24 @@ function afterScroll() {
     document.body.style.overflowY="scroll";
     document.body.style.background = colorMap[now];
     document.getElementById("slidein").style.animation = "";
+}
+
+// TODO add animation
+// FIXME position
+function createPlanet(){
+    var i=1;
+    while(i<10){
+        div = document.createElement("div");
+        div.setAttribute("id",i);
+        document.getElementsByTagName("center")[0].insertBefore(div, document.getElementsByClassName("watar0")[0]);
+        document.getElementById(i).innerHTML = '<i class="fa fa-globe" aria-hidden="true"></i>';
+        var tenbin = ["left", "right"][Math.floor(Math.random()*2)];
+        document.getElementById(i).style.float = tenbin;
+        document.getElementById(i).style[`margin-${tenbin}`]=`${Math.floor(Math.random()*5)+10}vw`;
+        document.getElementById(i).style.marginTop=`${Math.floor(Math.random()*5)}vh`;
+        i=(i+1)|0;
+    }
+
 }
 
 function init(){
@@ -42,8 +61,12 @@ function init(){
     // $('.glitch').glitch();
 
     now = location.href.includes("#") ? location.href.split("#")[1].replace("_info","") : "home";
-
+    
+    // createPlanet();
+    
     writeContent();
+
+    document.scrollingElement.scrollTop = 0;
 
     document.onclick = function(e) {
         if(["home","blog","contact","belong"].includes(e.target.id) && e.target.id != now) {

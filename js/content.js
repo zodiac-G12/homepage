@@ -1,16 +1,24 @@
 const home_content = `
     <center style="width:100vw">
-        <h2 style="margin-top:10vh">About Me</h2>
+        <h2 style="margin-top:10vh">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+                About Me
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+        </h2>
         <div class="greater-divider"></div>
         <p class="sentense">My name is ZODIAC-G12. I am 24 years old. Nice to meet you</p>
         <p class="sentense">I work as an engineer in Tokyo. It is fun to work while writing a program.</p>
         <p class="sentense">I attend an information university and have been doing programs since my first year.</p>
-        <p class="sentense">The first language I wrote was Ruby, but the most enthusiastic was Ruby.</p>
+        <p class="sentense">The first language I wrote was C-lang, but the most enthusiastic was Ruby.</p>
         <p class="sentense">Currently the most written programming language is JavaScript.</p>
         <p class="sentense">As is well known, it is a programming language that runs on 3 billion devices.</p>
         <div class="space"></div>
         <div class="space"></div>
-        <h2>Programming Language and etc</h2>
+        <h2>
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+                Programming Language and etc
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+        </h2>
         <div class="greater-divider"></div>
         <p class="sentense">It's something I've dealt with.</p>
         <p class="sentense">Please feel free to ask.</p>
@@ -18,7 +26,11 @@ const home_content = `
         <p style="padding: 1vw;font-weight:bold" class="sentense">Ruby Node Haskell C Zsh Bash Vim LaTeX MySQL Vue Nuxt AWS HTML5 CSS3 vanillaJS ThreeJS Ubuntu</p>
         <div class="space"></div>
         <div class="space"></div>
-        <h2>Creations</h2>
+        <h2>
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+                Creations
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+        </h2>
         <div class="greater-divider"></div>
         <p class="sentense">It is my deliverable.</p>
         <div class="links">
@@ -28,6 +40,7 @@ const home_content = `
             </br>
             <a class="link" href="https://zodiac-g12.github.io/Slide/pmob_re/">Make Slide</a>
             <a class="link" href="https://zodiac-g12.github.io/3dd/">3D Othello</a>
+            <a class="link" href="https://zodiac-g12.github.io/tail/">ZODIAC Tile</a>
         </div>
         <div class="space"></div>
         <div class="greater-divider"></div>
@@ -37,7 +50,11 @@ const home_content = `
 
 const contact_content = `
     <center style="width:100vw">
-        <h2 style="margin-top:10vh">Contact</h2>
+        <h2 style="margin-top:10vh">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+                Contact
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+        </h2>
         <div class="greater-divider"></div>
         <p class="sentense">If you want to contact me, please use these sns to contact me.</p>
         <p class="sentense">I am also looking for job requests.</p>
@@ -55,9 +72,13 @@ const contact_content = `
 
 const belong_content = `
     <center style="width:100vw">
-        <h2 style="margin-top:10vh">Belong</h2>
+        <h2 style="margin-top:10vh">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+                Belong
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+        </h2>
         <div class="greater-divider"></div>
-        <p class="sentense">I belong to a group called Pmob.</p>
+        <p class="sentense">I belong to a group called PMOB.</p>
         <p class="sentense">This is a circle to which humans of the math and program lineage belong.</p>
         <div class="links">
             <a class="link" href="https://pmob.github.io">About PMOB</a>
@@ -70,7 +91,11 @@ const belong_content = `
 
 const blog_content = `
     <center style="width:100vw">
-        <h2 style="margin-top:10vh">Blog</h2>
+        <h2 style="margin-top:10vh">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+                Blog
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+        </h2>
         <div class="greater-divider"></div>
         <p class="sentense">These are my blogs.</p>
         <p class="sentense">I am planning to launch a blog on gh-pages soon.</p>
