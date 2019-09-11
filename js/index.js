@@ -68,38 +68,38 @@ function init(){
 
     document.scrollingElement.scrollTop = 0;
 
-    document.onclick = function(e) {
-        if(["home","blog","contact","belong"].includes(e.target.id) && e.target.id != now) {
-            now = e.target.id;
-            (async()=>{
-                setTimeout(function(){
-                    window.scrollTo(0,1);
-                }, 1);
-                preScroll();
-                const top = nowMainPosition() / 100;
-                const span = top
-                while(0 < nowMainPosition()) {
-                    if(nowMainPosition() > top*70) await sleep(3);
-                    else if(nowMainPosition() > top*60) await sleep(5);
-                    else if(nowMainPosition() > top*50) await sleep(7);
-                    else if(nowMainPosition() > top*40) await sleep(9);
-                    else if(nowMainPosition() > top*30) await sleep(11);
-                    else if(nowMainPosition() > top*20) await sleep(13);
-                    else if(nowMainPosition() > top*10) await sleep(15);
-                    else await sleep(13);
-                    document.scrollingElement.scrollTop += 10;
-                }
-                await sleep(2000);
-                afterScroll();
-                writeContent();
-                location.href = location.href.split("#")[0] + `#${now}_info`;
-            })();
-        }
-        // if(e.target.id="menu") {
-        //     document.getElementById("menuselect").style.display = nextmenu;
-        //     if(nextmenu == "block") nextmenu = "none";
-        //     else nextmenu = "block";
-        // }
+    // FIXME OTHERS
+    // iOSだとこれは駄目？
+    // document.onclick = function(e) {
+    // }
+}
+
+function clicker(s){
+    if(s != now) {
+        now = s;
+        (async()=>{
+            setTimeout(function(){
+                window.scrollTo(0,1);
+            }, 1);
+            preScroll();
+            const top = nowMainPosition() / 100;
+            const span = top
+            while(0 < nowMainPosition()) {
+                if(nowMainPosition() > top*70) await sleep(3);
+                else if(nowMainPosition() > top*60) await sleep(5);
+                else if(nowMainPosition() > top*50) await sleep(7);
+                else if(nowMainPosition() > top*40) await sleep(9);
+                else if(nowMainPosition() > top*30) await sleep(11);
+                else if(nowMainPosition() > top*20) await sleep(13);
+                else if(nowMainPosition() > top*10) await sleep(15);
+                else await sleep(13);
+                document.scrollingElement.scrollTop += 10;
+            }
+            await sleep(2000);
+            afterScroll();
+            writeContent();
+            location.href = location.href.split("#")[0] + `#${now}_info`;
+        })();
     }
 }
 
