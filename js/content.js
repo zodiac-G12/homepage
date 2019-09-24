@@ -102,6 +102,8 @@ const blog_content = `
         <div class="links">
             <a class="hatena-link" href="http://zodi-g12.hatenablog.com/"><i class="fa fa-question-circle" aria-hidden="true"></i>
                 Hatena</a>
+            <a class="original-link" href="https://zodiac-G12.github.io/blog"><i class="fa fa fa-rocket" aria-hidden="true"></i>
+                Original</a>
             <a class="qiita-link" href="https://qiita.com/zodi_G12"><i class="fa fa-quora" aria-hidden="true"></i>
                 Qiita</a>
         </div>
