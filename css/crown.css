@@ -3,7 +3,6 @@
   /* 上右下左 */
   position: relative;
   padding-top: 1vw;
-  padding-bottom: 1vw;
   background: black;
   display: inline-block;
   text-align: center;
@@ -91,9 +90,11 @@
 #menulink{
   z-index: 3;
   width: 100vw;
-  height: calc(var(--font-size)*1.5);
-  /* padding-top: calc(var(--font-size)*0.2); */
-  padding-bottom: 1.3vh;
+  height: calc(var(--font-size)*3);
+  line-height: calc(var(--font-size)*2.7);
+  color: white;
+  background: linear-gradient(to right, magenta, royalblue, orange);
+  padding: calc(var(--font-size)*0.2) 0 0 0;
 }
 
 .crown a{
@@ -105,7 +106,7 @@
   margin-right: calc(var(--font-size)*0.5);
   margin-top: calc(var(--font-size)*0.29);
   margin-bottom: calc(var(--font-size));
-  box-shadow: 0 0 0px 1px snow;
+  box-shadow: 0 0 0px 2px snow;
   font-family: 'Black Ops One', cursive;
 }
 
