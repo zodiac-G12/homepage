@@ -37,7 +37,6 @@ const home_content = `
             <a class="link" href="https://zodiac-g12.github.io/main/form/">Minesweeper</a>
             <a class="link" href="https://zodiac-g12.github.io/LightsOut/">Lights Out</a>
             <a class="link" href="https://zodiac-g12.github.io/mtt/">Markdown Memo</a>
-            </br>
             <a class="link" href="https://zodiac-g12.github.io/Slide/pmob_re/">Make Slide</a>
             <a class="link" href="https://zodiac-g12.github.io/3dd/">3D Othello</a>
             <a class="link" href="https://zodiac-g12.github.io/tail/">ZODIAC Tile</a>
@@ -59,9 +58,9 @@ const contact_content = `
         <p class="sentense">If you want to contact me, please use these sns to contact me.</p>
         <p class="sentense">I am also looking for job requests.</p>
         <div class="links">
-            <a class="twitter-link" href="https://twitter.com/zodiac_G12"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <a class="twitter-link" href="https://twitter.com/zodiac_G12"><i class="fab fa-twitter-square" aria-hidden="true"></i>
                 Twitter</a>
-            <a class="github-link" href="https://github.com/zodiac-G12"><i class="fa fa-github" aria-hidden="true"></i>
+            <a class="github-link" href="https://github.com/zodiac-G12"><i class="fab fa-github" aria-hidden="true"></i>
                 Github</a>
         </div>
         <div class="space"></div>
@@ -104,7 +103,7 @@ const blog_content = `
                 Hatena</a>
             <a class="original-link" href="https://zodiac-G12.github.io/blog"><i class="fa fa fa-rocket" aria-hidden="true"></i>
                 Original</a>
-            <a class="qiita-link" href="https://qiita.com/zodi_G12"><i class="fa fa-quora" aria-hidden="true"></i>
+            <a class="qiita-link" href="https://qiita.com/zodi_G12"><i class="fab fa-quora" aria-hidden="true"></i>
                 Qiita</a>
         </div>
         <div class="space"></div>
