@@ -1,129 +1,129 @@
 .crown{
-  user-select: none;
-  /* 上右下左 */
-  position: relative;
-  padding-top: 1vw;
-  background: black;
-  display: inline-block;
-  text-align: center;
-  /* height: calc(var(--font-size)*4); */
-  width: 100vw;
+    user-select: none;
+    /* 上右下左 */
+    position: relative;
+    padding-top: 1vw;
+    background: black;
+    display: inline-block;
+    text-align: center;
+    /* height: calc(var(--font-size)*4); */
+    width: 100vw;
 }
 
 .crown h2{
-  font-family: 'Bungee Shade', cursive;
-  color: gold;
-  background: black;
+    font-family: 'Bungee Shade', cursive;
+    color: gold;
+    background: black;
 }
 
 .planet{
-  width:0;
-  margin-left: 3vw;
-  height:0;
-  float: left;
-  animation: pulpul 5s ease-in-out infinite;
+    width:0;
+    margin-left: 3vw;
+    height:0;
+    float: left;
+    animation: pulpul 5s ease-in-out infinite;
 }
 
 @keyframes pulpul{
-  0%{margin-top: 10vh;}
-  50%{margin-top: 10vh;}
-  60%{margin-top: 6vh;}
-  70%{margin-top: 12vh;}
-  80%{margin-top: 7vh;}
-  90%{margin-top: 11vh;}
-  100%{margin-top: 10vh;}
+    0%{margin-top: 10vh;}
+    50%{margin-top: 10vh;}
+    60%{margin-top: 6vh;}
+    70%{margin-top: 12vh;}
+    80%{margin-top: 7vh;}
+    90%{margin-top: 11vh;}
+    100%{margin-top: 10vh;}
 }
 
 @keyframes leftp{
-  0%{margin-top:-20vh;}
-  90%{opacity:1;}
-  100%{
-    opacity:0;
-    margin-top:calc(var(--font-size)*14);
-  }
+    0%{margin-top:-20vh;}
+    90%{opacity:1;}
+    100%{
+        opacity:0;
+        margin-top:calc(var(--font-size)*14);
+    }
 }
 
 .watar4, .watar3, .watar2, .watar1, .watar0{
-  text-align: center;
-  padding: calc(var(--font-size)/4);
-  animation: watar 1s ease-in-out infinite;
+    text-align: center;
+    padding: calc(var(--font-size)/4);
+    animation: watar 1s ease-in-out infinite;
 }
 .watarx:hover{
-  padding: calc(var(--font-size)/4);
-  animation: watarx 1s ease-in-out forwards;
+    padding: calc(var(--font-size)/4);
+    animation: watarx 1s ease-in-out forwards;
 }
 
 .watar4{
-  width: calc(var(--font-size)*10);
-  animation-delay: 0.1s;
+    width: calc(var(--font-size)*10);
+    animation-delay: 0.1s;
 }
 
 .watar3{
-  width: calc(var(--font-size)*10.5);
-  animation-delay: 0.2s;
+    width: calc(var(--font-size)*10.5);
+    animation-delay: 0.2s;
 }
 
 .watar2{
-  width: calc(var(--font-size)*11);
-  animation-delay: 0.3s;
+    width: calc(var(--font-size)*11);
+    animation-delay: 0.3s;
 }
 
 .watar1{
-  width: calc(var(--font-size)*11.5);
-  animation-delay: 0.4s;
+    width: calc(var(--font-size)*11.5);
+    animation-delay: 0.4s;
 }
 
 .watar0{
-  z-index:4;
-  margin: calc(var(--font-size));
-  width: calc(var(--font-size)*12);
-  animation-delay: 0.5s;
+    z-index:4;
+    margin: calc(var(--font-size));
+    width: calc(var(--font-size)*12);
+    animation-delay: 0.5s;
 }
 
 .crown img{
-  z-index:5;
-  height: calc(var(--font-size)*10);
-  object-fit: contain;
-  animation: watar 1s ease-in-out infinite;
+    z-index:5;
+    height: calc(var(--font-size)*10);
+    object-fit: contain;
+    animation: watar 1s ease-in-out infinite;
 }
 
 #menulink{
-  z-index: 3;
-  width: 100vw;
-  height: calc(var(--font-size)*3);
-  line-height: calc(var(--font-size)*2.7);
-  color: black;
-  background: linear-gradient(to right, magenta, royalblue, orange);
-  padding: calc(var(--font-size)*0.2) 0 0 0;
+    z-index: 3;
+    width: 100vw;
+    height: calc(var(--font-size)*3);
+    line-height: calc(var(--font-size)*2.7);
+    color: black;
+    background: linear-gradient(to right, magenta, royalblue, orange);
+    padding: calc(var(--font-size)*0.2) 0 0 0;
 }
 
 .crown a{
-  padding: calc(var(--font-size)*0.5) calc(var(--font-size)*0.8) calc(var(--font-size)*0.5) calc(var(--font-size)*0.8);
-  height: calc(var(--font-size));
-  font-size: calc(var(--font-size)*0.8);
-  /* font-weight: bold; */
-  margin-left: calc(var(--font-size)*0.5);
-  margin-right: calc(var(--font-size)*0.5);
-  margin-top: calc(var(--font-size)*0.29);
-  margin-bottom: calc(var(--font-size));
-  box-shadow: 0 0 calc(var(--font-size)*0.2) calc(var(--font-size)*0.2) black;
-  font-family: 'Black Ops One', cursive;
+    padding: calc(var(--font-size)*0.5) calc(var(--font-size)*0.8) calc(var(--font-size)*0.5) calc(var(--font-size)*0.8);
+    height: calc(var(--font-size));
+    font-size: calc(var(--font-size)*0.8);
+    /* font-weight: bold; */
+    margin-left: calc(var(--font-size)*0.5);
+    margin-right: calc(var(--font-size)*0.5);
+    margin-top: calc(var(--font-size)*0.29);
+    margin-bottom: calc(var(--font-size));
+    box-shadow: 0 0 calc(var(--font-size)*0.2) calc(var(--font-size)*0.2) black;
+    font-family: 'Black Ops One', cursive;
 }
 
 .crown a:hover{
-  /* box-shadow: 0 0 10px 5px lime; */
-  animation: watarx 0.1s ease-in-out forwards;
+    /* box-shadow: 0 0 10px 5px lime; */
+    animation: watarx 0.1s ease-in-out forwards;
 }
 
 @keyframes watar{
-  0%{}
-  100%{box-shadow: 0 0 10px 1px crimson}
+    0%{}
+    100%{box-shadow: 0 0 10px 1px crimson}
 }
 
 @keyframes watarx{
-  0%{}
-  100%{
-    box-shadow: 0 0 calc(var(--font-size)*0.2) calc(var(--font-size)*0.2) black, 0 0 calc(var(--font-size)*0.5) calc(var(--font-size)*0.4) lime;
-    text-shadow: 1px 1px 2px lime;
-  }
+    0%{}
+    100%{
+        box-shadow: 0 0 calc(var(--font-size)*0.2) calc(var(--font-size)*0.2) black, 0 0 calc(var(--font-size)*0.5) calc(var(--font-size)*0.4) lime;
+        text-shadow: 1px 1px 2px lime;
+    }
 }

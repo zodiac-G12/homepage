@@ -1,188 +1,199 @@
 /* 縦長 */
 @media screen and (orientation: portrait) {
-  :root{
-    --font-size: 3.5vw;
-    --landscape: none;
-    --portrait: block;
-  }
+    :root{
+        --font-size: 3.5vw;
+        --landscape: none;
+        --portrait: block;
+    }
 }
+
 /* 横長 */
 @media screen and (orientation: landscape) {
-  :root{
-    --font-size: 1.5vw;
-    --landscape: block;
-    --portrait: none;
-  }
+    :root{
+        --font-size: 1.5vw;
+        --landscape: block;
+        --portrait: none;
+    }
 }
 
-/* html{ */
-/*   overflow-x: hidden; */
-/* } */
+@font-face {
+    font-family: 'FontAwesome';
+    font-display: swap;
+    src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+    src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+    /* //  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts */
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
-  width: 100vw;
-  height: 100vh;
-  font-family: "Ubuntu Mono", monospace;
-  color: snow;
-  padding: 0;
-  margin: 0;
-  background: midnightblue;
-  font-size: var(--font-size);
+    width: 100vw;
+    height: 100vh;
+    font-family: "Ubuntu Mono", monospace;
+    color: snow;
+    padding: 0;
+    margin: 0;
+    background: midnightblue;
+    font-size: var(--font-size);
 }
 
 .greater-divider{
-  animation: nyoibo 1.0s ease-in-out forwards;
-  margin-bottom:calc(var(--font-size)*1.4);
-  line-height:calc(var(--font-size));
-  margin-left:0vw;
-  font-weight:bold;
-  color:white;
-  border-top: 1px solid white;
-  width:100vw;
+    animation: nyoibo 1.0s ease-in-out forwards;
+    margin-bottom:calc(var(--font-size)*1.4);
+    line-height:calc(var(--font-size));
+    margin-left:0vw;
+    font-weight:bold;
+    color:white;
+    border-top: 1px solid white;
+    width:100vw;
 }
 
 .space{
-  height: calc(var(--font-size)*5);
+    height: calc(var(--font-size)*5);
 }
 
 main{
-  position: absolute;
+    position: absolute;
 }
 
 #slidein{
-  position: relative;
-  z-index: 3;
-  background: midnightblue;
-  width: 0;
-  height: 101vh;
-  overflow: hidden;
+    position: relative;
+    z-index: 3;
+    background: midnightblue;
+    width: 0;
+    height: 101vh;
+    overflow: hidden;
 }
 
 @keyframes slidein{
-  0%{width: 0}
-  100%{width: 100vw}
+    0%{width: 0}
+    100%{width: 100vw}
 }
 @keyframes blood{
-  0%{background: black}
-  100%{background: crimson}
+    0%{background: black}
+    100%{background: crimson}
 }
 @keyframes feedin{
-  0%{margin-left: -1vw;opacity:0;}
-  100%{margin-left: 0;opacity:1;}
+    0%{margin-left: -1vw;opacity:0;}
+    100%{margin-left: 0;opacity:1;}
 }
 @keyframes nyoibo{
-  0%{width: 0}
-  100%{width: 100vw}
+    0%{width: 0}
+    100%{width: 100vw}
 }
 
 footer{
-  height: calc(var(--font-size)*3);
+    height: calc(var(--font-size)*3);
 }
 
 .sentense{
-  margin: calc(var(--font-size));
+    margin: calc(var(--font-size));
 }
 
 .links{
-  text-align: center;
-  /* height: calc(var(--font-size)*2); */
-  padding-top: calc(var(--font-size)*2);
-  padding-bottom: calc(var(--font-size)*4);
+    text-align: center;
+    /* height: calc(var(--font-size)*2); */
+    padding-top: calc(var(--font-size)*2);
+    padding-bottom: calc(var(--font-size)*4);
 }
 
 .creations{
-  height: calc(var(--font-size)*2);
-  padding-top: calc(var(--font-size)*2);
+    height: calc(var(--font-size)*2);
+    padding-top: calc(var(--font-size)*2);
 }
 
 .twitter-link, .github-link, .hatena-link, .qiita-link, .original-link{
-  text-decoration: none;
-  margin-right: 10px;
-  padding: calc(var(--font-size)*0.5) calc(var(--font-size)) calc(var(--font-size)*0.5) calc(var(--font-size)*0.9);
-  color: white;
-  height: var(--font-size);
-  line-height: var(--font-size);
-  text-align: center;
-  border-radius: 3px;
-  user-select: none;
-  outline: none;
-  opacity: 0;
-  animation: feedin 0.5s ease-in-out forwards;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: calc(var(--font-size)*0.5) calc(var(--font-size)) calc(var(--font-size)*0.5) calc(var(--font-size)*0.9);
+    color: white;
+    height: var(--font-size);
+    line-height: var(--font-size);
+    text-align: center;
+    border-radius: 3px;
+    user-select: none;
+    outline: none;
+    opacity: 0;
+    animation: feedin 0.5s ease-in-out forwards;
 }
 
 .twitter-link{
-  background: steelblue;
+    background: steelblue;
 }
 
 .github-link{
-  background: red;
+    background: red;
 }
 
 .qiita-link{
-  background: #55c500;
+    background: #55c500;
 }
 
 .hatena-link{
-  background: #4d4d4d;
+    background: #4d4d4d;
 }
 
 .original-link{
-  background: navy;
+    background: navy;
 }
 
 .link{
-  display: block;
-  color: gold;
-  margin-top: calc(var(--font-size)*2);
-  font-size: calc(var(--font-size)*1.1);
-  animation: feedin 0.5s ease-in-out forwards;
+    display: block;
+    color: gold;
+    margin-top: calc(var(--font-size)*2);
+    font-size: calc(var(--font-size)*1.1);
+    animation: feedin 0.5s ease-in-out forwards;
 }
 
 .link:hover{
-  color: red;
+    color: red;
 }
 
 .twitter-link:hover, .github-link:hover, .qiita-link:hover, .hatena-link:hover, .original-link:hover{
-  color: white;
-  box-shadow: 0 0 10px 2px black;
+    color: white;
+    box-shadow: 0 0 10px 2px black;
 }
 
 .twitter-link:hover{
-  background: teal;
+    background: teal;
 }
 
 .github-link:hover{
-  background: crimson;
+    background: crimson;
 }
 
 .qiita-link:hover{
-  background: forestgreen;
+    background: forestgreen;
 }
 
 .hatena-link:hover{
-  background: darkslategray;
+    background: darkslategray;
 }
 
 .original-link:hover{
-  background: midnightblue;
+    background: midnightblue;
 }
 
 .twitter-link:active{
-  box-shadow: 0 0 10px 5px teal;
+    box-shadow: 0 0 10px 5px teal;
 }
 
 .github-link:active{
-  box-shadow: 0 0 10px 5px crimson;
+    box-shadow: 0 0 10px 5px crimson;
 }
 
 .qiita-link:active{
-  box-shadow: 0 0 10px 5px forestgreen;
+    box-shadow: 0 0 10px 5px forestgreen;
 }
 
 .hatena-link:active{
-  box-shadow: 0 0 10px 5px darkslategray;
+    box-shadow: 0 0 10px 5px darkslategray;
 }
 
 .original-link:active{
-  box-shadow: 0 0 10px 5px midnightblue;
+    box-shadow: 0 0 10px 5px midnightblue;
 }
