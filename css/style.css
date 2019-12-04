@@ -16,6 +16,23 @@
     }
 }
 
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/webfonts/fa-brands-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src:url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/webfonts/fa-regular-400.woff2") format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/webfonts/fa-solid-900.woff2") format("woff2");
+    font-display: swap;
+}
+
 body{
     width: 100vw;
     height: 100vh;
@@ -30,13 +47,13 @@ body{
 
 .greater-divider{
     animation: nyoibo 1.0s ease-in-out forwards;
-    margin-bottom:calc(var(--font-size)*1.4);
-    line-height:calc(var(--font-size));
-    margin-left:0vw;
-    font-weight:bold;
-    color:white;
+    margin-bottom: calc(var(--font-size)*1.4);
+    line-height: calc(var(--font-size));
+    margin-left: 0vw;
+    font-weight: bold;
+    color: white;
     border-top: 1px solid white;
-    width:100vw;
+    width: 100vw;
 }
 
 .space{
