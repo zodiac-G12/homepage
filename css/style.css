@@ -133,8 +133,7 @@ footer{
 .link{
   display: block;
   color: gold;
-  /* padding: calc(var(--font-size)); */
-  margin: calc(var(--font-size)*2);
+  margin-top: calc(var(--font-size)*2);
   font-size: calc(var(--font-size)*1.1);
   animation: feedin 0.5s ease-in-out forwards;
 }
