@@ -54,6 +54,16 @@ function createPlanet(){
 
 function init(){
     // https://www.yoheim.net/blog.php?q=20121008
+    
+    const userAgent=window.navigator.userAgent.toLowerCase();
+      userAgent.indexOf('msie')!=-1||userAgent.indexOf('trident')!=-1||
+      userAgent.indexOf('edge')!=-1?
+        location.href="https://zodiac-g12.github.io/sorry.html":"";
+      // (confirm("このブラウザは壊れています。GoogleChromeを入手しましょう。")?
+      // window.location.href="https://www.google.com/intl/ja/chrome/":
+      // window.location.href="https://www.mozilla.org/ja/firefox/new/"):"";
+
+
     setTimeout(function(){
         window.scrollTo(0,1);
     }, 1);

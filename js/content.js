@@ -6,7 +6,7 @@ const home_content = `
             <i class="fa fa-rocket" aria-hidden="true"></i>
         </h2>
         <div class="greater-divider"></div>
-        <p class="sentense">My name is ZODIAC-G12. I am 24 years old. Nice to meet you</p>
+        <p class="sentense">My name is ZODIAC-G12. I am 24 years old. Nice to meet you🍖</p>
         <p class="sentense">I work as an engineer in Tokyo. It is fun to work while writing a program.</p>
         <p class="sentense">I attend an information university and have been doing programs since my first year.</p>
         <p class="sentense">The first language I wrote was C-lang, but the most enthusiastic was Ruby.</p>
