@@ -58,7 +58,7 @@ function init(){
     const userAgent=window.navigator.userAgent.toLowerCase();
       userAgent.indexOf('msie')!=-1||userAgent.indexOf('trident')!=-1||
       userAgent.indexOf('edge')!=-1?
-        location.href="https://zodiac-g12.github.io/sorry.html":"";
+        location.href="https://zodiac-g12.github.io/homepage/sorry.html":"";
       // (confirm("このブラウザは壊れています。GoogleChromeを入手しましょう。")?
       // window.location.href="https://www.google.com/intl/ja/chrome/":
       // window.location.href="https://www.mozilla.org/ja/firefox/new/"):"";
