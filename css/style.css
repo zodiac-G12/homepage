@@ -110,7 +110,7 @@ footer{
     padding-top: calc(var(--font-size)*2);
 }
 
-.twitter-link, .github-link, .hatena-link, .qiita-link, .original-link{
+.twitter-link, .github-link, .hatena-link, .qiita-link, .original-link, .pmob-link{
     text-decoration: none;
     margin-right: 10px;
     padding: calc(var(--font-size)*0.5) calc(var(--font-size)) calc(var(--font-size)*0.5) calc(var(--font-size)*0.9);
@@ -123,6 +123,10 @@ footer{
     outline: none;
     opacity: 0;
     animation: feedin 0.5s ease-in-out forwards;
+}
+
+.pmob-link{
+    background: #2f2f2f;
 }
 
 .twitter-link{
@@ -157,7 +161,7 @@ footer{
     color: red;
 }
 
-.twitter-link:hover, .github-link:hover, .qiita-link:hover, .hatena-link:hover, .original-link:hover{
+.twitter-link:hover, .github-link:hover, .qiita-link:hover, .hatena-link:hover, .original-link:hover, .pmob-link:hover{
     color: white;
     box-shadow: 0 0 10px 2px black;
 }
@@ -182,6 +186,10 @@ footer{
     background: midnightblue;
 }
 
+.pmob-link:hover{
+    background: #1f1f1f;
+}
+
 .twitter-link:active{
     box-shadow: 0 0 10px 5px teal;
 }
@@ -200,4 +208,8 @@ footer{
 
 .original-link:active{
     box-shadow: 0 0 10px 5px midnightblue;
+}
+
+.pmob-link:active{
+    box-shadow: 0 0 10px 5px #1f1f1f;
 }

@@ -37,9 +37,14 @@ const home_content = `
             <a class="link" href="https://zodiac-g12.github.io/main/form/">Minesweeper</a>
             <a class="link" href="https://zodiac-g12.github.io/LightsOut/">Lights Out</a>
             <a class="link" href="https://zodiac-g12.github.io/mtt/">Markdown Memo</a>
-            <a class="link" href="https://zodiac-g12.github.io/Slide/pmob_re/">Make Slide</a>
             <a class="link" href="https://zodiac-g12.github.io/3dd/">3D Othello</a>
             <a class="link" href="https://zodiac-g12.github.io/tail/">ZODIAC Tile</a>
+            <a class="link" href="https://zodiac-g12.github.io/Calendirty/">Calendirty</a>
+            <a class="link" href="https://zodiac-g12.github.io/money/">I HAVE A MANEY</a>
+            <a class="link" href="https://zodiac-g12.github.io/sudoku/num/">sudoku</a>
+            <a class="link" href="https://zodiac-g12.github.io/clock/">clock1</a>
+            <a class="link" href="https://zodiac-g12.github.io/mira/">clock2</a>
+            <a class="link" href="https://zodiac-g12.github.io/yomikikase/">yomikikase</a>
         </div>
         <div class="space"></div>
         <div class="greater-divider"></div>
@@ -80,7 +85,7 @@ const belong_content = `
         <p class="sentense">I belong to a group called PMOB.</p>
         <p class="sentense">This is a circle to which humans of the math and program lineage belong.</p>
         <div class="links">
-            <a class="link" href="https://pmob.github.io">About PMOB</a>
+            <a class="pmob-link" href="https://pmob.github.io">About PMOB</a>
         </div>
         <div class="space"></div>
         <div class="greater-divider"></div>
@@ -111,3 +116,21 @@ const blog_content = `
         <footer>&copy; Copyright 2019 Zodiac Caulfield</footer>
     </center>
 `;
+//
+// 以下はiframeつき
+// <a class="link" href="https://zodiac-g12.github.io/main/form/">Minesweeper</a>
+// <iframe src="https://zodiac-g12.github.io/main/form" style="pointer-events:none;"></iframe>
+// <a class="link" href="https://zodiac-g12.github.io/LightsOut/">Lights Out</a>
+// <iframe src="https://zodiac-g12.github.io/LightsOut" style="pointer-events:none;"></iframe>
+// <a class="link" href="https://zodiac-g12.github.io/mtt/">Markdown Memo</a>
+// <iframe src="https://zodiac-g12.github.io/mtt" style="pointer-events:none;"></iframe>
+// <a class="link" href="https://zodiac-g12.github.io/3dd/">3D Othello</a>
+// <iframe src="https://zodiac-g12.github.io/3dd" style="pointer-events:none;"></iframe>
+// <a class="link" href="https://zodiac-g12.github.io/tail/">ZODIAC Tile</a>
+// <iframe src="https://zodiac-g12.github.io/tail" style="pointer-events:none;"></iframe>
+// <a class="link" href="https://zodiac-g12.github.io/Calendirty/">Calendirty</a>
+// <iframe src="https://zodiac-g12.github.io/Calendirty/" style="pointer-events:none;"></iframe>
+//             
+// 以下は消えたリンク先(スライドメイク)
+// <a class="link" href="https://zodiac-g12.github.io/slider">Make Slide</a>
+// <iframe src="https://zodiac-g12.github.io/Slider" style="pointer-events:none;"></iframe>
