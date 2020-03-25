@@ -34,17 +34,7 @@ const home_content = `
         <div class="greater-divider"></div>
         <p class="sentense">It is my deliverable.</p>
         <div class="links">
-            <a class="link" href="https://zodiac-g12.github.io/main/form/">Minesweeper</a>
-            <a class="link" href="https://zodiac-g12.github.io/LightsOut/">Lights Out</a>
-            <a class="link" href="https://zodiac-g12.github.io/mtt/">Markdown Memo</a>
-            <a class="link" href="https://zodiac-g12.github.io/3dd/">3D Othello</a>
-            <a class="link" href="https://zodiac-g12.github.io/tail/">ZODIAC Tile</a>
-            <a class="link" href="https://zodiac-g12.github.io/Calendirty/">Calendirty</a>
-            <a class="link" href="https://zodiac-g12.github.io/money/">I HAVE A MANEY</a>
-            <a class="link" href="https://zodiac-g12.github.io/sudoku/num/">sudoku</a>
-            <a class="link" href="https://zodiac-g12.github.io/clock/">clock1</a>
-            <a class="link" href="https://zodiac-g12.github.io/mira/">clock2</a>
-            <a class="link" href="https://zodiac-g12.github.io/yomikikase/">yomikikase</a>
+            <a class="link" href="https://zodiac-g12.github.io/creation/description.html">Deliverable</a>
         </div>
         <div class="space"></div>
         <div class="greater-divider"></div>
